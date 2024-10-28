@@ -1,11 +1,11 @@
 @import url("./common_styles.css");
 
 #header {
-  background-image: url("../assets/header_img.jpeg");
+  background: url("../assets/header_img.jpeg") no-repeat center center fixed;
   background-size: cover;
   -webkit-filter: grayscale(20%);
   filter: grayscale(20%);
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   position: relative;
   color: var(--TEXT);
@@ -13,17 +13,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 #header h1 {
   color: var(--TEXT);
-  font-size: 4rem;
+  font-size: 400%;
   animation: fade-in-and-translate 1s ease;
 }
 
 #header h6 {
   color: var(--TEXT);
-  font-size: 1rem;
+  font-size: 100%;
   animation: fade-in-and-translate 1.6s ease;
 }
 
