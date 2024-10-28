@@ -1,18 +1,15 @@
 @import url("./common_styles.css");
 
-body {
-  background-color: var(--BACKGROUND);
-  /* background-color: white; */
-}
-
 .nav-bar {
-  position: sticky;
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: black;
+  background-color: none;
   padding: 18px 40px;
-  box-shadow: rgba(256, 256, 256, 0.2) -5px 7px 29px 0px;
-  
+  z-index: 10;
+  transition: all 0.5s;
 }
 
 .nav-bar ul {
@@ -22,6 +19,8 @@ body {
 .nav-bar a {
   color: var(--TEXT);
   text-decoration: none;
+  text-shadow: 3px 3px black;
+
 }
 
 .nav-bar a:hover {
@@ -31,4 +30,9 @@ body {
 .nav-bar .right ul {
   display: flex;
   gap: 1.5rem;
+}
+
+.not-on-top {
+  background-color: black;
+  box-shadow: rgba(256, 256, 256, 0.2) -5px 7px 29px 0px;
 }
