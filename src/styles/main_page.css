@@ -50,6 +50,10 @@
   margin-left: 10px;
 }
 
+.scroll-offset {
+  scroll-margin-top: 4em;
+}
+
 #about {
   display: flex;
   flex-direction: column;
