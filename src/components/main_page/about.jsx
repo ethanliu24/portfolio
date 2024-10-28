@@ -8,7 +8,7 @@ function About() {
           <p>
             Hello! I am a sophomore student at the University of Toronto studying Computer Science.
             I have a huge passion for building softwares that come to life on both front and back ends.
-            While I love and the have most experience developing full-stack web applications, I am also 
+            While I love and have the most experience developing full-stack web applications, I am also 
             excited to try out different fields including more general software engineering, computer 
             networks, AI, machine learning, operating systems and more!
           </p>
