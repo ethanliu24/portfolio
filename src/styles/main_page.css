@@ -42,6 +42,7 @@
 .apply-spacing {
   padding: 0 10em;
   margin-top: 2.5em;
+  margin-bottom: 1.5em;
 }
 
 .section-title {
@@ -53,6 +54,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: inherit;
 }
 
 #about .contents {
@@ -82,5 +84,26 @@
 
 #about .text-contents a {
   color: var(--TEXT);
-  /* font-style: italic; */
+}
+
+@media (max-width: 1056px) {
+  .apply-spacing {
+    padding: 0 10%;
+  }
+  
+  .txt-align-center {
+    align-items: center;
+  }
+
+  #about .contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+  }
+
+  #about .text-contents {
+    text-align: center;
+  }
 }
