@@ -1,6 +1,6 @@
 function About() {
   return (
-    <div id="about" className="apply-spacing">
+    <div id="about" className="apply-spacing .txt-align-center">
       <h1 className="section-title">About</h1>
       <div className="contents">
         <img src="src/assets/my_pic.jpeg" alt="my picture" className="picture" />
