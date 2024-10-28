@@ -63,5 +63,7 @@ html {
 
 body {
   font-family: 'Lato', 'Courier New', Courier, monospace;
+  font-weight: 700;
+  font-style: normal;
   background-color: var(--BACKGROUND);
 }

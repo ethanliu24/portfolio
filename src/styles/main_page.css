@@ -32,7 +32,7 @@
 }
 
 @keyframes fade-in-and-translate {
-  0% {
+  from {
     translate: 0 100px;
     opacity: 0;
   }
