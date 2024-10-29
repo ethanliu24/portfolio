@@ -1,25 +1,22 @@
-import { PinIcon, GitHubIcon, LinkedInIcon, MailIcon, InstagramIcon } from "../../assets/svgs.jsx"
-
 function InfoBar() {
-  const id = "info-bar-"
-  const color = "#FFFFFF"
+  const path = "src/assets/icons/"
 
   return (
-    <div id="info-bar" className="apply-spacing">
-      <div id="location">
-        <PinIcon color={color} id={`${id}pin`} classes={["icon"]} />
-        <div id="location-txt">Toronto,<br></br>Canada</div>
+    <div id="info-bar">
+      <div id="info-bar-location">
+        <img id="info-bar-pin" className="icon" src="src/assets/icons/pin.svg" alt="pin icon" />
+        <h2 id="location-txt">Toronto,<br></br>Canada</h2>
       </div>
 
-      <div id="socials">
-        <GitHubIcon color={color} id={`${id}github`} classes={["icon"]} />
-        <LinkedInIcon color={color} id={`${id}linkedin`} classes={["icon"]} />
-        <MailIcon color={color} id={`${id}linkedin`} classes={["icon"]} />
-        <InstagramIcon color={color} id={`${id}linkedin`} classes={["icon"]} />
-      </div>
+      <div id="info-bar-socials">
+        <img id="info-bar-github" className="icon" src="src/assets/icons/github.svg" alt="github icon" />
+        <img id="info-bar-linkedin" className="icon" src="src/assets/icons/linkedin.svg" alt="linked in icon" />
+        <img id="info-bar-main" className="icon" src="src/assets/icons/mail.svg" alt="mail icon" />
+        <img id="info-bar-instagram" className="icon" src="src/assets/icons/instagram.svg" alt="instagram icon" />
 
-      <button id="get-resume" className="glow-on-hover btn">Resume</button>
-      <button className="playground glow-on-hover btn">Playground</button>
+        <button id="get-resume" className="glow-on-hover btn">Resume</button>
+        <button className="playground glow-on-hover btn">Playground</button>
+      </div>
     </div>
   )
 }
