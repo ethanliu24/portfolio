@@ -328,6 +328,8 @@
   display: flex;
   justify-content: space-between;
   align-items: end;
+  flex-wrap: wrap;
+  row-gap: 0.3rem;
   border-bottom: 4px double rgb(90, 90, 90);
   padding-bottom: 0.7rem;
 }
@@ -336,6 +338,7 @@
   display: flex;
   align-items: end;
   gap: 0.7rem;
+  flex-wrap: nowrap;
 }
 
 .org-logo {
@@ -348,7 +351,7 @@
 }
 
 .organization-name {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .work-period {
@@ -356,6 +359,7 @@
   font-style: italic;
   font-size: 0.7rem;
   font-weight: 500;
+  margin-left: 1rem;
 }
 
 .work-detail {
@@ -364,9 +368,12 @@
 }
 
 .role {
+  font-size: 0.9rem;
+  font-weight: 500;
   font-style: italic;
 }
 
 .work-description {
   font-weight: 300;
+  font-size: 0.8rem;
 }
