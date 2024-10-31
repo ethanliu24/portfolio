@@ -28,8 +28,14 @@ function InfoBar() {
 
       <div id="info-bar-btns">
         {/* TODO adde href */}
-        <button id="get-resume" className="glow-on-hover" onMouseEnter={startWaveAnimation} onMouseLeave={stopWaveAnimation}><WaveAnimation text="Resume" /></button>
-        <button className="playground glow-on-hover" onMouseEnter={startWaveAnimation} onMouseLeave={stopWaveAnimation}><WaveAnimation text="Playground" /></button>
+        <button id="get-resume" className="glow-on-hover" onMouseEnter={startWaveAnimation} onMouseLeave={stopWaveAnimation}>
+          <img src="src/assets/icons/download.svg" />
+          <WaveAnimation text="Resume" />
+        </button>
+        <button className="playground glow-on-hover" onMouseEnter={startWaveAnimation} onMouseLeave={stopWaveAnimation}>
+          <img src="src/assets/icons/external.svg" />
+          <WaveAnimation text="Playground" />
+        </button>
       </div>
     </div>
   )
