@@ -1,7 +1,17 @@
-function InfoBar() {
-  const path = "src/assets/icons/"
+import WaveAnimation from "../common/WaveAnimation"
 
-  return (
+function InfoBar() {
+  const startWaveAnimation = (e) => {
+    console.log(e.target)
+    e.target.classList.add("wave-animation");
+  }
+
+  const stopWaveAnimation = (e) => {
+    e.target.classList.remove("wave-animation")
+  }
+
+  const display = (
+    // #TODO add href for icons
     <div id="info-bar">
       <div id="info-bar-location">
         <img id="info-bar-pin" className="icon" src="src/assets/icons/pin.svg" alt="pin icon" />
@@ -14,11 +24,18 @@ function InfoBar() {
         <img id="info-bar-main" className="icon" src="src/assets/icons/mail.svg" alt="mail icon" />
         <img id="info-bar-instagram" className="icon" src="src/assets/icons/instagram.svg" alt="instagram icon" />
 
-        <button id="get-resume" className="glow-on-hover btn">Resume</button>
-        <button className="playground glow-on-hover btn">Playground</button>
+      </div>
+
+      <div id="info-bar-btns">
+        {/* TODO adde href */}
+        <button id="get-resume" className="glow-on-hover" onMouseEnter={startWaveAnimation} onMouseLeave={stopWaveAnimation}><WaveAnimation text="Resume" /></button>
+        <button className="playground glow-on-hover" onMouseEnter={startWaveAnimation} onMouseLeave={stopWaveAnimation}><WaveAnimation text="Playground" /></button>
       </div>
     </div>
   )
+
+  return display
 }
+
 
 export default InfoBar 
