@@ -68,6 +68,7 @@ body {
   font-family: 'Lato', 'Courier New', Courier, monospace;
   font-weight: 700;
   font-style: normal;
+  font-size: 15px;
   background-color: var(--BACKGROUND);
   width: 100vw;
   height: 100vh;
