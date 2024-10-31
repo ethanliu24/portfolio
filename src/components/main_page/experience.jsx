@@ -1,6 +1,6 @@
 function Experience({ orgName, startDate, endDate, role, description, logoPath }) {
   // startDate and endDate has the format {Month Year} or Present. E.g. Sep 2024
-  const workPeriod = (startDate ? startDate : "") + (endDate ? endDate : "")
+  const workPeriod = (startDate ? startDate : "") + " - " + (endDate ? endDate : "")
 
   return (
     <div className="experience-div">
