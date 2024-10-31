@@ -1,4 +1,4 @@
-import Tool from "../common/Tool"
+import Tool from "./Tool"
 
 function TechStack() {
   const path = "src/assets/dev_tools/"
