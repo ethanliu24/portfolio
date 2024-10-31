@@ -2,7 +2,6 @@ import WaveAnimation from "../common/WaveAnimation"
 
 function InfoBar() {
   const startWaveAnimation = (e) => {
-    console.log(e.target)
     e.target.classList.add("wave-animation");
   }
 
