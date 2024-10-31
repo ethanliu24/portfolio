@@ -175,17 +175,9 @@
 }
 
 #info-bar-btns button {
-  padding: 0.2em 2em;
-  border-radius: 10px;
-  background: none;
   border: 3px solid rgb(55, 55, 55);
-  outline: none;
-  color: var(--TEXT);
   position: relative;
   z-index: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 #info-bar-btns img {

@@ -12,15 +12,9 @@
   transition: all 0.5s;
 }
 
-.nav-bar ul {
-  list-style-type: none;
-}
-
 .nav-bar a {
   color: var(--TEXT);
-  text-decoration: none;
   text-shadow: 3px 3px black;
-
 }
 
 .nav-bar a:hover {

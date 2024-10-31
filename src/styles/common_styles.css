@@ -75,3 +75,24 @@ body {
   flex-direction: column;
   align-items: center;
 }
+
+a {
+  text-decoration: none;
+  color: var(--TEXT);
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  border-radius: 10px;
+  background: none;
+  outline: none;
+  color: var(--TEXT);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2em 2em;
+  border: none;
+}
