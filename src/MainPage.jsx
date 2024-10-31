@@ -5,6 +5,7 @@ import Footer from './components/common/Footer.jsx'
 import InfoBar from './components/main_page/InfoBar.jsx'
 import TechStack from './components/main_page/TechStack.jsx'
 import Experiences from './components/main_page/Experiences.jsx'
+import ProjectSect from './components/main_page/ProjectSect.jsx'
 
 function MainPage() {
   return (
@@ -15,6 +16,7 @@ function MainPage() {
       <About /> 
       <TechStack />
       <Experiences />
+      <ProjectSect />
       <Footer />
     </>
   )
