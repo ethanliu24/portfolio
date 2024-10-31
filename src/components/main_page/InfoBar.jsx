@@ -17,7 +17,7 @@ function InfoBar() {
         <h2 id="location-txt">Toronto,<br></br>Canada</h2>
       </div>
 
-      <div id="info-bar-socials">
+      <div id="info-bar-socials" className="icon-container">
         <img id="info-bar-github" className="icon" src="src/assets/icons/github.svg" alt="github icon" />
         <img id="info-bar-linkedin" className="icon" src="src/assets/icons/linkedin.svg" alt="linked in icon" />
         <img id="info-bar-main" className="icon" src="src/assets/icons/mail.svg" alt="mail icon" />

@@ -60,6 +60,23 @@
   scroll-margin-top: 4em;
 }
 
+.view-more {
+  color: var(--SUB_TEXT);
+  font-weight: 300;
+  font-style: italic;
+  font-size: small;
+}
+
+.view-more:hover {
+  color: var(--TEXT);
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 #about {
   display: flex;
   flex-direction: column;
@@ -145,11 +162,6 @@
   gap: 3em;
 }
 
-#info-bar-socials .icon {
-  height: 50px;
-  width: 50px;
-}
-
 #info-bar-pin {
   height: 60px;
   width: 60px;
@@ -158,12 +170,6 @@
 #info-bar-mail {
   height: 65px;
   width: 65px;
-}
-
-#info-bar-socials .icon:hover {
-  -webkit-filter: grayscale(100%); 
-  filter: grayscale(100%);
-  transform: scale(1.1);
 }
 
 #info-bar-btns {
@@ -377,3 +383,4 @@
   font-weight: 300;
   font-size: 0.8rem;
 }
+
