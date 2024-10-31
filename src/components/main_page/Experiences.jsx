@@ -3,7 +3,7 @@ import Experience from "./Experience"
 function Experiences() {
   return (
     <div id="experiences" className="apply-spacing txt-align-center scroll-offset">
-      <h1 className="section-title">Experiences</h1>
+      <h1 className="section-title">EXPERIENCES</h1>
       <div className="contents">
         <Experience 
           orgName="Courseography"

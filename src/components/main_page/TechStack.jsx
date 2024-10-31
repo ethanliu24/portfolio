@@ -5,7 +5,7 @@ function TechStack() {
 
   return (
     <div id="tech-stack" className="apply-spacing txt-align-center">
-      <h1 className="section-title">Tech Stack</h1>
+      <h1 className="section-title">TECH STACK</h1>
       <p className="section-subtext">A non exaustive list of technologies that I've worked with</p>
       <div className="contents">
         <Tool name="Python" description="A type of snake" path={path + "python.svg"}/>

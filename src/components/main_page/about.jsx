@@ -1,7 +1,7 @@
 function About() {
   return (
     <div id="about" className="apply-spacing txt-align-center scroll-offset">
-      <h1 className="section-title">About</h1>
+      <h1 className="section-title">ABOUT</h1>
       <div className="contents">
         <img src="src/assets/cat.jpeg" alt="a cute cat" className="picture" />
         <div className="text-contents">

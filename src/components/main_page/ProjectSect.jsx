@@ -4,7 +4,7 @@ function ProjectSect() {
   return (
     <div id="project-sect" className="apply-spacing txt-align-center scroll-offset">
     <div className="container">
-      <h1 className="section-title">Projects</h1>
+      <h1 className="section-title">PROJECTS</h1>
       {/* TODO fill in the link to projects page */}
       <a className="view-more" href="">view more »</a>
     </div>
