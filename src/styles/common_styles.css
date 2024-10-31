@@ -52,6 +52,8 @@ h1, h2, h3, h4, h5, h6 {
 
 :root {
   --BACKGROUND: #000000;
+  --SUB_BACKGROUND: #333333;
+  --BACKGROUND_BORDER: #1e1c1c;
   --TEXT: #FFFFFF;
   --SUB_TEXT: #AAAAAA;
 }
