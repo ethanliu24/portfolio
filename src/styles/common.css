@@ -79,6 +79,7 @@
 #contact-txt {
   font-weight: 300;
   color: var(--SUB_TEXT);
+  text-align: center;
 }
 
 #contact .icon-container {
