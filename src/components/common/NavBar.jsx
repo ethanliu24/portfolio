@@ -5,17 +5,17 @@ function NavBar() {
     <nav className="nav-bar">
       <div className="left">
         <ul>
-          <li><a href="#header">Home</a></li>
+          <li id="nav-bar-home"><a href="#header">Home</a></li>
         </ul>
       </div>
 
       <div className="right">
         <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="">Experiences</a></li>
-          <li><a href="">Projects</a></li>
-          <li><a href="">Contact</a></li>
-          <li><a href="">Playground</a></li>
+          <li id="nav-bar-about"><a href="#about">About</a></li>
+          <li id="nav-bar-experiences"><a href="#experiences">Experiences</a></li>
+          <li id="nav-bar-projects"><a href="#projects">Projects</a></li>
+          <li id="nav-bar-contacts"><a href="#contact">Contacts</a></li>
+          <li id="nav-bar-playground"><a href="">Playground</a></li>
         </ul>
       </div>
     </nav>
