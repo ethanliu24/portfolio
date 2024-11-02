@@ -13,7 +13,7 @@ function NavBar() {
         <ul>
           <li id="nav-bar-about"><a href="#about">About</a></li>
           <li id="nav-bar-experiences"><a href="#experiences">Experiences</a></li>
-          <li id="nav-bar-projects"><a href="#projects">Projects</a></li>
+          <li id="nav-bar-projects"><a href="#project-sect">Projects</a></li>
           <li id="nav-bar-contacts"><a href="#contact">Contacts</a></li>
           <li id="nav-bar-playground"><a href="">Playground</a></li>
         </ul>
