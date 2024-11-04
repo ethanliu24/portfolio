@@ -27,7 +27,6 @@ function TechStack() {
         <Tool name="VS Code" description="chads use vim (not me)" path={path + "vscode.svg"}/>
         <Tool name="Pycharm" description="jet giving brain" path={path + "pycharm.svg"}/>
         <Tool name="IntelliJDEA" description="jet giving dumb brains" path={path + "intellijdea.svg"}/>
-
       </div>
     </div>
   )
