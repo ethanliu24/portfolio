@@ -51,33 +51,36 @@ function MainPage() {
     }
 
     // about animation
-    scrollAnimation("#about img").from("#about img", { scaleY: 0, duration: 0.3 }, 0)
+    scrollAnimation("#about img").from("#about img", { scaleX: 0.6, duration: 0.6 }, 0)
     scrollAnimation(".text-contents").from(".text-contents", { opacity: 0, x: 50, skewX: 30, duration: 1 }, 0)
 
     // tech stack animation
-    scrollAnimation("#tech-stack").from("#tech-stack .contents", { opacity: 0, y: 30, duration: 0.7 }, 0.5)
+    scrollAnimation("#tech-stack").from("#tech-stack .section-subtext", { opacity: 0, y: 30, duration: 0.5 }, 0)
+    scrollAnimation("#tech-stack").from("#tech-stack .contents", { opacity: 0, y: 30, duration: 0.7 }, 0.2)
 
+    // experiences animation
+    scrollAnimation("#experiences").from("#experiences", { opacity: 0, scaleY: 0.2, duration: 0.7 }, 0)
+    const experiences = document.querySelectorAll(".experience-div")
+    for (let i = 0; i < experiences.length; i++) {
+      scrollAnimation("#experiences").from(experiences[i], {
+        opacity: 0,
+        duration: 1,
+        y: 100,
+      }, i * 0.2 + 0.5)
+    }
+    
     // general animations
     for (let i = 0; i < sections.length; i++) {
       const title = sections[i]
       
       // title animation
       scrollAnimation(title).from(title + " .section-title", {
-        opacity: 0,
-        x: -50, 
-        skewX: -30, 
+        opacity: 0.5,
+        x: -10, 
+        skewX: -10, 
         duration: 1
       }, 0)
-
-      // subtext animation
-      scrollAnimation(title).from(title + " .section-subtext", {
-        opacity: 0,
-        y: 10,
-        duration: 0.5,
-      }, 0)
     }
-
-
   })
 
   
