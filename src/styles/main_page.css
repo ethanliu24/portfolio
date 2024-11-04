@@ -8,6 +8,7 @@
 
 .section-title {
   margin-bottom: 0.5em;
+  overflow: hidden;
 }
 
 .section-subtext {
@@ -214,6 +215,7 @@
   display: flex;
   align-items: center;
   gap: 1em;
+  overflow: hidden;
 }
 
 #location-txt {

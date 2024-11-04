@@ -42,21 +42,25 @@ function MainPage() {
     
 
     // info bar animation 
-    scrollAnimation("#info-bar-location").from("#info-bar-location", { opacity: 0, x: -150, duration: 1}, 0)
+    scrollAnimation("#info-bar-location").from("#info-bar-location", { x: -150, duration: 1}, 0)
     scrollAnimation("#get-resume").from("#get-resume", { opacity: 0, x: 150, duration: 1}, 0.2)
-    scrollAnimation("#info-bar-btns .playground").from("#info-bar-btns .playground", { opacity: 0, x: 150, duration: 1}, 0.5)
+    scrollAnimation("#info-bar-btns .playground").from("#info-bar-btns .playground", { opacity: 0, x: 150, duration: 1}, 0.4)
     const infoBarIcons = document.querySelectorAll("#info-bar-socials .icon")
     for (let i = 0; i < infoBarIcons.length; i++) {
-      scrollAnimation("#" + infoBarIcons[i].id).from(infoBarIcons[i], { opacity: 0 }, i * 0.2 + 0.1)
+      scrollAnimation("#" + infoBarIcons[i].id).from(infoBarIcons[i], { opacity: 0 }, 0.1)
     }
+
+    // about animation
+    scrollAnimation("#about img").from("#about img", { scaleY: 0, duration: 0.5 }, 0)
+    scrollAnimation(".text-contents").from(".text-contents", { opacity: 0, x: 150, skewX: 30, duration: 1.5 }, 0)
 
     // title animation
     for (let i = 0; i < sections.length; i++) {
       const title = sections[i]
       scrollAnimation(title).from(title + " .section-title", {
         opacity: 0,
-        x: 150, 
-        skewX: 30, 
+        x: -150, 
+        skewX: -30, 
         duration: 1
       }, 0)
     }
