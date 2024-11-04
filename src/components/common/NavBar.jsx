@@ -2,7 +2,7 @@
 // TODO fill in href
 function NavBar() {
   return (
-    <nav className="nav-bar">
+    <nav id="nav-bar">
       <div className="left">
         <ul>
           <li id="nav-bar-home"><a href="#header">Home</a></li>

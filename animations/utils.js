@@ -1,5 +1,5 @@
 window.addEventListener("scroll", () => {
-  const navBar = document.querySelector(".nav-bar");
+  const navBar = document.getElementById("#nav-bar");
   if (window.scrollY > 10) {
     navBar.classList.add("not-on-top");
   } else {

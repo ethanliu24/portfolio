@@ -1,6 +1,6 @@
 @import url("./common_styles.css");
 
-.nav-bar {
+#nav-bar {
   position: fixed;
   top: 0;
   width: 100%;
@@ -12,16 +12,16 @@
   transition: all 0.5s;
 }
 
-.nav-bar a {
+#nav-bar a {
   color: var(--TEXT);
   text-shadow: 3px 3px black;
 }
 
-.nav-bar a:hover {
+#nav-bar a:hover {
   color: var(--SUB_TEXT);
 }
 
-.nav-bar .right ul {
+#nav-bar .right ul {
   display: flex;
   gap: 1.5rem;
 }

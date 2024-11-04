@@ -16,16 +16,31 @@ function MainPage() {
   gsap.registerPlugin(ScrollTrigger)
 
   useGSAP(() => {
+    const animation = gsap.timeline({})
+    const scrollAnimation = triggerElem =>  {
+      return gsap.timeline({
+        scrollTrigger: {
+          trigger: triggerElem,
+          start: "top center",
+        }
+      })
+    }
+
     // nav bar animation
     const navBarDur = 2
-    let navBarAnimation = gsap.timeline();
+    const navBar = document.querySelectorAll("#nav-bar li")
+    console.log(navBar)
+    for (let i = 0; i < navBar.length; i++) {
+      console.log(navBar[i])
+      animation.from(navBar[i], { opacity: 0, duration: navBarDur }, i * 0.2)
+    }
 
-    navBarAnimation.from("#nav-bar-home", { opacity: 0, duration: navBarDur }, 0)
-    navBarAnimation.from("#nav-bar-about", { opacity: 0, duration: navBarDur }, 0.4)
-    navBarAnimation.from("#nav-bar-experiences", { opacity: 0, duration: navBarDur }, 0.6)
-    navBarAnimation.from("#nav-bar-projects", { opacity: 0, duration: navBarDur }, 0.8)
-    navBarAnimation.from("#nav-bar-contacts", { opacity: 0, duration: navBarDur }, 1)
-    navBarAnimation.from("#nav-bar-playground", { opacity: 0, duration: navBarDur }, 1.2)
+    // animation.from("#nav-bar-home", )
+    // animation.from("#nav-bar-about", { opacity: 0, duration: navBarDur }, 0.4)
+    // animation.from("#nav-bar-experiences", { opacity: 0, duration: navBarDur }, 0.6)
+    // animation.from("#nav-bar-projects", { opacity: 0, duration: navBarDur }, 0.8)
+    // animation.from("#nav-bar-contacts", { opacity: 0, duration: navBarDur }, 1)
+    // animation.from("#nav-bar-playground", { opacity: 0, duration: navBarDur }, 1.2)
 
     // header animation
     const headerDur = 0.8
