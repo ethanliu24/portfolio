@@ -59,21 +59,21 @@
   position: relative;
 }
 
-#header h1 {
+#header-title {
   color: var(--TEXT);
   font-size: 5rem;
   line-height: 100%;
   text-wrap: wrap;
 }
 
-#header h6 {
+#header-subtitle {
   color: var(--SUB_TEXT);
   font-size: 1.1rem;
   font-weight: 500;
   text-wrap: wrap;
 }
 
-#header p {
+#header-subheading {
   color: var(--SUB_TEXT);
   font-weight: 500;
   font-size: 0.8rem;
