@@ -16,12 +16,13 @@ function MainPage() {
   gsap.registerPlugin(ScrollTrigger)
 
   useGSAP(() => {
+    const sections = ["#about", "#tech-stack", "#experiences", "#project-sect", "#contact"]
     const animation = gsap.timeline({})
     const scrollAnimation = triggerElem =>  {
       return gsap.timeline({
         scrollTrigger: {
           trigger: triggerElem,
-          start: "top center",
+          start: "top bottom",
         }
       })
     }
@@ -29,9 +30,7 @@ function MainPage() {
     // nav bar animation
     const navBarDur = 2
     const navBar = document.querySelectorAll("#nav-bar li")
-    console.log(navBar)
     for (let i = 0; i < navBar.length; i++) {
-      console.log(navBar[i])
       animation.from(navBar[i], { opacity: 0, duration: navBarDur }, i * 0.2)
     }
 
@@ -41,26 +40,26 @@ function MainPage() {
     animation.from("#header-title", { opacity: 0, duration: headerDur, translateY: 100 }, 0.2)
     animation.from("#header-subtitle", { opacity: 0, duration: headerDur, translateY: 50 }, 0.6)
     
-    const sections = ["#about", "#tech-stack", "#experiences", "#project-sect", "#contact"]
+
+    // info bar animation 
+    scrollAnimation("#info-bar-location").from("#info-bar-location", { opacity: 0, x: -150, duration: 1}, 0)
+    scrollAnimation("#get-resume").from("#get-resume", { opacity: 0, x: 150, duration: 1}, 0.2)
+    scrollAnimation("#info-bar-btns .playground").from("#info-bar-btns .playground", { opacity: 0, x: 150, duration: 1}, 0.5)
+    const infoBarIcons = document.querySelectorAll("#info-bar-socials .icon")
+    for (let i = 0; i < infoBarIcons.length; i++) {
+      scrollAnimation("#" + infoBarIcons[i].id).from(infoBarIcons[i], { opacity: 0 }, i * 0.2 + 0.1)
+    }
 
     // title animation
-    sections.forEach(title => {
-      const titleAnimation = gsap.timeline({
-        scrollTrigger: {
-          trigger: title,
-          start: "top center",
-        }
-      })
-
-      titleAnimation.from(title + " .section-title", {
+    for (let i = 0; i < sections.length; i++) {
+      const title = sections[i]
+      scrollAnimation(title).from(title + " .section-title", {
         opacity: 0,
         x: 150, 
         skewX: 30, 
         duration: 1
       }, 0)
-    })
-
-
+    }
   })
 
   

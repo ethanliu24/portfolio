@@ -20,7 +20,7 @@ function InfoBar() {
       <div id="info-bar-socials" className="icon-container">
         <img id="info-bar-github" className="icon" src="src/assets/icons/github.svg" alt="github icon" />
         <img id="info-bar-linkedin" className="icon" src="src/assets/icons/linkedin.svg" alt="linked in icon" />
-        <img id="info-bar-main" className="icon" src="src/assets/icons/mail.svg" alt="mail icon" />
+        <img id="info-bar-mail" className="icon" src="src/assets/icons/mail.svg" alt="mail icon" />
         <img id="info-bar-instagram" className="icon" src="src/assets/icons/instagram.svg" alt="instagram icon" />
 
       </div>

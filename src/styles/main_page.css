@@ -234,11 +234,6 @@
   width: 60px;
 }
 
-#info-bar-mail {
-  height: 65px;
-  width: 65px;
-}
-
 #info-bar-btns {
   display: flex;
   justify-content: space-evenly;
