@@ -35,20 +35,11 @@ function MainPage() {
       animation.from(navBar[i], { opacity: 0, duration: navBarDur }, i * 0.2)
     }
 
-    // animation.from("#nav-bar-home", )
-    // animation.from("#nav-bar-about", { opacity: 0, duration: navBarDur }, 0.4)
-    // animation.from("#nav-bar-experiences", { opacity: 0, duration: navBarDur }, 0.6)
-    // animation.from("#nav-bar-projects", { opacity: 0, duration: navBarDur }, 0.8)
-    // animation.from("#nav-bar-contacts", { opacity: 0, duration: navBarDur }, 1)
-    // animation.from("#nav-bar-playground", { opacity: 0, duration: navBarDur }, 1.2)
-
     // header animation
     const headerDur = 0.8
-    let headerAnimation = gsap.timeline({})
-
-    headerAnimation.from("#header-subheading", { opacity: 0, duration: headerDur, translateY: 50 }, 0)
-    headerAnimation.from("#header-title", { opacity: 0, duration: headerDur, translateY: 100 }, 0.2)
-    headerAnimation.from("#header-subtitle", { opacity: 0, duration: headerDur, translateY: 50 }, 0.6)
+    animation.from("#header-subheading", { opacity: 0, duration: headerDur, translateY: 50 }, 0)
+    animation.from("#header-title", { opacity: 0, duration: headerDur, translateY: 100 }, 0.2)
+    animation.from("#header-subtitle", { opacity: 0, duration: headerDur, translateY: 50 }, 0.6)
     
     const sections = ["#about", "#tech-stack", "#experiences", "#project-sect", "#contact"]
 
