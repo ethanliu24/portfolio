@@ -29,22 +29,35 @@ function MainPage() {
 
     // header animation
     const headerDur = 0.8
-    let headerAnimation = gsap.timeline({
-      ScrollTrigger: {
-        trigger: "#header",
-        scrub: true,
-        pin: true,
-        start: "top top",
-        end: "+=200",
-      }
-    })
+    let headerAnimation = gsap.timeline({})
 
     headerAnimation.from("#header-subheading", { opacity: 0, duration: headerDur, translateY: 50 }, 0)
     headerAnimation.from("#header-title", { opacity: 0, duration: headerDur, translateY: 100 }, 0.2)
     headerAnimation.from("#header-subtitle", { opacity: 0, duration: headerDur, translateY: 50 }, 0.6)
+    
+    const sections = ["#about", "#tech-stack", "#experiences", "#project-sect", "#contact"]
+
+    // title animation
+    sections.forEach(title => {
+      const titleAnimation = gsap.timeline({
+        scrollTrigger: {
+          trigger: title,
+          start: "top center",
+        }
+      })
+
+      titleAnimation.from(title + " .section-title", {
+        opacity: 0,
+        x: 150, 
+        skewX: 30, 
+        duration: 1
+      }, 0)
+    })
+
 
   })
 
+  
   return (
     <>
       <NavBar />
@@ -56,6 +69,7 @@ function MainPage() {
       <ProjectSect />
       <Contact />
       <Footer />
+      <script type="module" src="animations/mainPageAnimation.js"></script>
     </>
   )
 }
