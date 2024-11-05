@@ -84,6 +84,13 @@ function MainPage() {
       scrollAnimation("#" + projects[i].id).from(`#${projects[i].id} .title-container .github-icon`, { opacity: 0 }, 1.4)
       scrollAnimation("#" + projects[i].id).from(`#${projects[i].id} .title-container .web-icon`, { opacity: 0 }, 1.8)
     }
+
+    // contact animation
+    scrollAnimation("#contact").from("#contact-txt", { opacity: 0, y: 100, duration: 0.8 }, 0)
+    const contacts = document.querySelectorAll("#contact .icon")
+    for (let i = 0; i < contacts.length; i++) {
+      scrollAnimation("#contact").from(contacts[i], { opacity: 0, duration: 1 }, i * 0.4 + 1)
+    }
     
     // general animations
     for (let i = 0; i < sections.length; i++) {
