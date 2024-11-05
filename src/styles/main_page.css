@@ -21,7 +21,7 @@
 }
 
 .scroll-offset {
-  scroll-margin-top: 4em;
+  scroll-margin-top: 5em;
 }
 
 .view-more {
@@ -513,10 +513,6 @@
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(20px);
-}
-
-.project-tech:not(:last-child)::after {
-  content: ",";
 }
 
 .project-description {
