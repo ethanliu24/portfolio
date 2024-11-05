@@ -58,6 +58,10 @@ h1, h2, h3, h4, h5, h6 {
   --SUB_TEXT: #b0b0b0;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 html {
   scroll-behavior: smooth;
   color: var(--TEXT);
@@ -70,8 +74,8 @@ body {
   font-style: normal;
   font-size: 15px;
   background-color: var(--BACKGROUND);
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;

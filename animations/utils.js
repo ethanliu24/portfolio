@@ -6,3 +6,16 @@ window.addEventListener("scroll", () => {
     navBar.classList.remove("not-on-top");
   }
 });
+
+window.addEventListener("resize", () => {
+  const links = document.querySelectorAll("#links li")
+  if (window.innerWidth >= 790) {
+    links.forEach((elem) => {
+      elem.style.display = "block"
+    })
+  } else {
+    links.forEach((elem) => {
+      elem.style.display = "none"
+    })
+  }
+})

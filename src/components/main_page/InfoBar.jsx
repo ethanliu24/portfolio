@@ -33,7 +33,7 @@ function InfoBar() {
         </button>
         <button className="playground glow-on-hover" onMouseEnter={startWaveAnimation} onMouseLeave={stopWaveAnimation}>
           <img src="src/assets/icons/external.svg" />
-          <WaveAnimation text="Playground" />
+          <WaveAnimation text="More" />
         </button>
       </div>
     </div>
