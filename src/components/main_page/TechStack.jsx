@@ -18,6 +18,9 @@ function TechStack() {
         <Tool name="React" description="My reaction to the info:" path={path + "react.svg"}/>
         <Tool name="Webpack" description="bdsm bundle" path={path + "webpack.svg"}/>
         <Tool name="Vite" description="more bdsm bundle" path={path + "vite.svg"}/>
+        <Tool name="GSAP" description="need to explore more" path={path + "gsap.png"}/>
+        <Tool name="Happstack" description="cant even find the logo" path={path + "happstack.png"}/>
+        <Tool name="SpringBoot" description="java" path={path + "springboot.svg"}/>
         <Tool name="Jest" description="testing" path={path + "jest.svg"}/>
         <Tool name="React Testing Library" description="more testing" path={path + "testing_library.svg"}/>
         <Tool name="SQLite" description="database" path={path + "sqlite.svg"}/>
