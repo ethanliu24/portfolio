@@ -51,8 +51,8 @@ function MainPage() {
     }
 
     // about animation
-    scrollAnimation("#about img").from("#about img", { scaleX: 0.6, duration: 0.6 }, 0)
-    scrollAnimation(".text-contents").from(".text-contents", { opacity: 0, x: 50, skewX: 30, duration: 1 }, 0)
+    scrollAnimation("#about img").from("#about img", { opacity: 0, scaleX: 0.6, duration: 0.6 }, 0)
+    scrollAnimation(".text-contents").from(".text-contents", { opacity: 0, x: 50, skewX: 10, duration: 1 }, 0)
 
     // tech stack animation
     scrollAnimation("#tech-stack").from("#tech-stack .section-subtext", { opacity: 0, y: 30, duration: 0.5 }, 0)
