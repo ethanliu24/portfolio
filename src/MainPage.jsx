@@ -10,6 +10,7 @@ import Contact from './components/common/Contact.jsx'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 import { ScrollTrigger } from 'gsap/all'
+import { sub } from 'three/webgpu'
 
 function MainPage() {
   gsap.registerPlugin(useGSAP)
@@ -55,8 +56,7 @@ function MainPage() {
     scrollAnimation(".text-contents").from(".text-contents", { opacity: 0, x: 50, skewX: 10, duration: 1 }, 0)
 
     // tech stack animation
-    scrollAnimation("#tech-stack").from("#tech-stack .section-subtext", { opacity: 0, y: 30, duration: 0.5 }, 0)
-    scrollAnimation("#tech-stack").from("#tech-stack .contents", { opacity: 0, y: 30, duration: 0.7 }, 0.2)
+    scrollAnimation("#tech-stack").from(".dev-tool-div", { opacity: 0, y: 30, stagger: 0.05 }, 0)
 
     // experiences animation
     scrollAnimation("#experiences").from("#experiences", { opacity: 0, scaleY: 0.2, duration: 0.7 }, 0)
@@ -103,6 +103,17 @@ function MainPage() {
         skewX: -10, 
         duration: 1
       }, 0)
+
+      // subtext animation
+      const subtext = document.querySelector(`${title} .section-subtext`)
+      if (subtext) {
+        scrollAnimation(title).from(subtext, {
+          opacity: 0.5,
+          x: 10, 
+          skewX: 10, 
+          duration: 1
+        }, 0)
+      }
     }
   })
 
