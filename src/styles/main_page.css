@@ -14,7 +14,8 @@
 
 .section-subtext {
   color: var(--SUB_TEXT);
-  margin-top: -1em;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
   font-weight: 300;
   font-style: italic;
 }
@@ -551,7 +552,16 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
+  #info-bar-btns {
+    row-gap: 1rem;
+  }
+  
+  #info-bar .icon {
+    width: 40px;
+    height: 40px;
+  }
+
   #project-sect .contents {
     gap: 1rem;
   }
@@ -577,11 +587,6 @@
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    margin-bottom: 1rem;
-  }
-  
-  .view-more {
-    margin-top: -1.2rem;
   }
 }
 
@@ -604,5 +609,15 @@
 
   #about .text-contents {
     text-align: center;
+  }
+}
+
+@media (max-width: 1440px) {
+  #info-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
   }
 }

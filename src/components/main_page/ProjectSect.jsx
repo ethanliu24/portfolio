@@ -6,7 +6,7 @@ function ProjectSect() {
     <div className="container">
       <h1 className="section-title">PROJECTS</h1>
       {/* TODO fill in the link to projects page */}
-      <a className="view-more" href="">view more »</a>
+      <a className="view-more section-subtext" href="">view more »</a>
     </div>
     <div className="contents">
       <ProjectCard id="project-1"
