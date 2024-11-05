@@ -64,9 +64,25 @@ function MainPage() {
     for (let i = 0; i < experiences.length; i++) {
       scrollAnimation("#experiences").from(experiences[i], {
         opacity: 0,
-        duration: 1,
+        duration: 0.4,
         y: 100,
-      }, i * 0.2 + 0.5)
+      }, i * 0.2 + 0.1)
+    }
+
+    // projects animation
+    const projects = document.querySelectorAll(".project-card-container")
+    for (let i = 0; i < projects.length; i++) {
+      // container
+      scrollAnimation("#" + projects[i].id).from(projects[i], {
+        opacity: 0,
+        x: i % 2 === 0 ? 100 : -100,
+        duration: 1,
+      }, 0.2)
+
+      // project info
+      scrollAnimation("#" + projects[i].id).from(`#${projects[i].id} .title-container a`, { opacity: 0 }, 1)
+      scrollAnimation("#" + projects[i].id).from(`#${projects[i].id} .title-container .github-icon`, { opacity: 0 }, 1.4)
+      scrollAnimation("#" + projects[i].id).from(`#${projects[i].id} .title-container .web-icon`, { opacity: 0 }, 1.8)
     }
     
     // general animations
