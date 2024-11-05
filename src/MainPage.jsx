@@ -10,7 +10,6 @@ import Contact from './components/common/Contact.jsx'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 import { ScrollTrigger } from 'gsap/all'
-import { sub } from 'three/webgpu'
 
 function MainPage() {
   gsap.registerPlugin(useGSAP)

@@ -59,13 +59,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 html, body {
+  width: 100vw;
+  height: 100vh;
   overflow-x: hidden;
+  color: var(--TEXT);
+  background-color: var(--BACKGROUND);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 html {
   scroll-behavior: smooth;
-  color: var(--TEXT);
-  display: flex;
 }
 
 body {
@@ -73,12 +79,11 @@ body {
   font-weight: 700;
   font-style: normal;
   font-size: 15px;
-  background-color: var(--BACKGROUND);
+}
+
+#root {
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 a {
@@ -119,4 +124,20 @@ button {
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
+}
+
+.under-development {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.in-progress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
 }
