@@ -5,7 +5,7 @@ import Contact from './components/common/Contact.jsx'
 function ProjectsPage() {
   return (
     <div className="under-development">
-      {/* <NavBar /> */}
+      <NavBar />
       <div className='in-progress'>Under development</div>
       <Contact />
       <Footer />

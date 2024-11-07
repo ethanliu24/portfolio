@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 const Home = React.lazy(() => import('./MainPage.jsx'))
 const Projects = React.lazy(() => import('./ProjectsPage.jsx'))
+const UnderDevelopement = React.lazy(() => import('./UnderDevelopment.jsx'))
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<Home />} />
-          <Route path="/projects" element={<Projects/>} />
+          <Route path="/projects" element={<UnderDevelopement/>} />
         </Routes>
       </Suspense>
     </Router>

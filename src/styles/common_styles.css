@@ -139,3 +139,20 @@ button {
   align-items: center;
   margin-top: 5rem;
 }
+
+.under-development-page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-shadow: black 1px 1px 3px;
+  background: url("../assets/under_development.gif") no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* * {
+  border: 1px white solid;
+} */

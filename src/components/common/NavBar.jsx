@@ -7,7 +7,7 @@ function NavBar() {
   return (
     <nav id="nav-bar">
       <ul id="home">
-        <li id="nav-bar-home"><a href="#header">Home</a></li>
+        <li id="nav-bar-home"><a href="/">Home</a></li>
       </ul>
 
       <ul id="links">
