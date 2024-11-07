@@ -1,6 +1,6 @@
-function ProjectCard({ id, name, description, tech, imgPath, githubLink, webLink, projectPagePath }) {
+function ProjectCard({ name, description, tech, imgPath, githubLink, webLink, projectPagePath }) {
   return (
-    <div id={id} className="project-card-container">
+    <div id={"project-" + name.toLowerCase().split(" ").join("-")} className="project-card-container">
       <a href={projectPagePath}>
         <div className="visual-container">
           <img src={imgPath} alt="image of the project" />

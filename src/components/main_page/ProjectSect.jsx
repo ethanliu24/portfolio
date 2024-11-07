@@ -8,7 +8,7 @@ function ProjectSect() {
       <a className="view-more section-subtext" href="/projects">view more »</a>
     </div>
     <div className="contents">
-      <ProjectCard id="project-1"
+      <ProjectCard
         name="Portfolio" 
         description="
           The page you are seeing right now! I made this using JavaScript and React, with pure CSS for styling. 
@@ -18,10 +18,10 @@ function ProjectSect() {
         imgPath="src/assets/projects/portfolio/banner.png"
         githubLink="https://github.com/ethanliu24/portfolio"
         webLink="https://www.youtube.com/watch?v=KRtvCCDbLgQ" // TODO change path to the actual website
-        projectPagePath="/projects/portfolio"
+        projectPagePath="/under-development"
       />
 
-      <ProjectCard id="project-2"
+      <ProjectCard
         name="JAE Market" 
         description="
           A backend system to manage a database, supporting CRUD actions for users. 
@@ -30,10 +30,10 @@ function ProjectSect() {
         " 
         tech={["Java"]}  
         imgPath="src/assets/projects/jae-market/banner.png"
-        projectPagePath="/projects/jae-market"
+        projectPagePath="/under-development"
       />
 
-      <ProjectCard id="project-3"
+      <ProjectCard
         name="Dementia Bot" 
         description="
           A project for me to learn how to use public APIs. The bot uses Instagram Graph API to 
@@ -42,10 +42,10 @@ function ProjectSect() {
         tech={["Python", "Requests", "Schedule"]}  
         imgPath="src/assets/projects/dementia-bot/banner.png"
         githubLink="https://github.com/ethanliu24/Instagram-Bot"
-        projectPagePath="/projects/dementia-bot"
+        projectPagePath="/under-development"
       />
 
-      <ProjectCard id="project-4"
+      <ProjectCard
         name="Music License Marketplace" 
         description="
           Ongoing project! The project aims to provide a plateform to simplify my beat leasing process and an efficient experience for customers. 
@@ -54,7 +54,7 @@ function ProjectSect() {
         " 
         tech={["JavaScript", "Ruby", "React", "Tailwind", "Vite", "Rails"]}  
         imgPath="src/assets/projects/comming_soon.png"
-        projectPagePath="/projects/music-license-marketplace"
+        projectPagePath="/under-development"
       />
     </div>
   </div>
