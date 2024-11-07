@@ -1,6 +1,11 @@
 import WaveAnimation from "../common/WaveAnimation"
 
 function InfoBar() {
+  const openResume = () => {
+    const newWindow = window.open("src/assets/Master_Resume.pdf", "_blank") 
+    if (!newWindow) alert("Pop-up blocked! Please allow pop-ups to view the PDF.")
+  }
+
   const startWaveAnimation = (e) => {
     e.target.classList.add("wave-animation");
   }
@@ -26,11 +31,12 @@ function InfoBar() {
       </div>
 
       <div id="info-bar-btns">
-        {/* TODO adde href */}
-        <button id="get-resume" className="glow-on-hover" onMouseEnter={startWaveAnimation} onMouseLeave={stopWaveAnimation}>
+        <button id="get-resume" className="glow-on-hover" onClick={openResume} onMouseEnter={startWaveAnimation} onMouseLeave={stopWaveAnimation}>
           <img src="src/assets/icons/download.svg" />
           <WaveAnimation text="Resume" />
         </button>
+
+        {/* TODO adde href */}
         <button className="playground glow-on-hover" onMouseEnter={startWaveAnimation} onMouseLeave={stopWaveAnimation}>
           <img src="src/assets/icons/external.svg" />
           <WaveAnimation text="More" />
