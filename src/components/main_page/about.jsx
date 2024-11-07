@@ -7,8 +7,9 @@ function About() {
         <div className="text-contents">
           <p>
             Hello! I'm a second-year student studying computer science at the University of Toronto. 
-            My main experience roots in web development with a slight emphasis on the front-end currently,
-            using modern technologies such as React and other front-end libraries. 
+            My experience mainly roots in web development with a slight emphasis on the front-end,
+            using modern technologies such as React and other front-end libraries to create 
+            user friendly interfaces.
           </p> 
 
           <p>
