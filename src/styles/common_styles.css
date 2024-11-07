@@ -59,8 +59,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 html, body {
-  width: 100vw;
-  height: 100vh;
   overflow-x: hidden;
   color: var(--TEXT);
   background-color: var(--BACKGROUND);
