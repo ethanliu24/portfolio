@@ -11,17 +11,17 @@ function NavBar() {
       </ul>
 
       <ul id="links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experiences">Experiences</a></li>
-        <li><a href="#project-sect">Projects</a></li>
-        <li><a href="#contact">Contacts</a></li>
+        <li><a href="/#about">About</a></li>
+        <li><a href="/#experiences">Experiences</a></li>
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="/#contact">Contacts</a></li>
         <li><a href="">More</a></li>
       </ul>
       
       <img id="menu" className="icon" src="src/assets/icons/menu.svg" onClick={() => {
           const navBar = document.querySelector("#nav-bar")
           open ? navBar.classList.add("opened") : navBar.classList.remove("opened");
-          setOpen(!open)
+          setOpen(o => !o)
         
           const links = document.querySelectorAll("#links li")
           links.forEach((elem) => {
