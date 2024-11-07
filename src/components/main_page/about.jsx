@@ -21,7 +21,7 @@ function About() {
           </p>
 
           <p>
-            Outside school, I do fencing and I claim to be the biggest music nerd among my friends. 
+            Beyond coding, I do fencing and I claim to be the biggest music nerd among my friends. 
             Although the cat in the image does not belong to me, he is my favourite meatball. 
             (I adore cats, they make funny faces and I put them in my presentations). 
             You can learn more about me <a href="">here</a>.
