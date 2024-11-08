@@ -1,7 +1,6 @@
 import assetPaths from "../../../assetPaths.js"
 
 function Contact() {
-  console.log(assetPaths.githubIcon)
   return (
     <div id="contact" className="scroll-offset">
       <h1 className="section-title">CONTACTS</h1>

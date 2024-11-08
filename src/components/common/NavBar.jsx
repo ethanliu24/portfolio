@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import assetPaths from '../../../assetPaths.js'
 
-// TODO fill in href
 function NavBar() {
   const [open, setOpen] = useState(true)
 
@@ -14,7 +13,8 @@ function NavBar() {
       <ul id="links">
         <li><a href="/#about">About</a></li>
         <li><a href="/#experiences">Experiences</a></li>
-        <li><a href="/projects">Projects</a></li>
+        {/* TODO change projects to go to /projects route */}
+        <li><a href="/#project-sect">Projects</a></li> 
         <li><a href="/#contact">Contacts</a></li>
         <li><a href="">More</a></li>
       </ul>
