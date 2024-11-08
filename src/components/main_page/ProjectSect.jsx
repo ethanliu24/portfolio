@@ -22,6 +22,19 @@ function ProjectSect() {
       />
 
       <ProjectCard
+        name="Quibbly" 
+        description="
+          Ongoing project! Currently in the design phase using OpenAPI to manage routes and data schemas.
+          This project is a full stack website to address other rental services’ poor 
+          design, slow response time, and lack of affordable listings in the rental market, aiming 
+          for a smoother rental experience. There will be lots of learnings from this!
+        " 
+        tech={["React/Next", "Tailwind", "Rails", "OSMPythonTools", "pandas", "OpenAPI", "Docker", "Kamal"]}  
+        imgPath="src/assets/projects/comming_soon.png"
+        projectPagePath="/under-development"
+      />
+
+      <ProjectCard
         name="JAE Market" 
         description="
           A backend system to manage a database, supporting CRUD actions for users. 
@@ -45,7 +58,7 @@ function ProjectSect() {
         projectPagePath="/under-development"
       />
 
-      <ProjectCard
+      {/* <ProjectCard
         name="Music License Marketplace" 
         description="
           Ongoing project! The project aims to provide a plateform to simplify my beat leasing process and an efficient experience for customers. 
@@ -55,7 +68,7 @@ function ProjectSect() {
         tech={["JavaScript", "Ruby", "React", "Tailwind", "Vite", "Rails"]}  
         imgPath="src/assets/projects/comming_soon.png"
         projectPagePath="/under-development"
-      />
+      /> */}
     </div>
   </div>
   )
