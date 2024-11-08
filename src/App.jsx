@@ -8,7 +8,7 @@ const UnderDevelopement = React.lazy(() => import('./UnderDevelopment.jsx'))
 function App() {
   return (
     <Router>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<Home />} />
