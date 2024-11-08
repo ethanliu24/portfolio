@@ -33,6 +33,7 @@ import git from "/src/assets/dev_tools/git.svg"
 import gsap from "/src/assets/dev_tools/gsap.png"
 import happstack from "/src/assets/dev_tools/happstack.png"
 import haskell from "/src/assets/dev_tools/haskell.svg"
+import html from "/src/assets/dev_tools/html.svg"
 import intellijdea from "/src/assets/dev_tools/intellijdea.svg"
 import java from "/src/assets/dev_tools/java.svg"
 import javascript from "/src/assets/dev_tools/javascript.svg"
@@ -85,6 +86,7 @@ const assetPaths = {
   gsap,
   happstack,
   haskell,
+  html,
   intellijdea,
   java,
   javascript,
