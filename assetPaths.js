@@ -35,3 +35,5 @@ const paths = {
   // portfolio
   portfolioBanner: rootPath + projectsPath + "portfolio/banner.png",
 }
+
+export default paths
