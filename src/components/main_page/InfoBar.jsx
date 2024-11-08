@@ -7,6 +7,11 @@ function InfoBar() {
     if (!newWindow) alert("Pop-up blocked! Please allow pop-ups to view the PDF.")
   }
 
+  const openMore = () => {
+    // TODO change to the actual webpage
+    window.location.href = window.location.pathname + "under-development"
+  }
+
   const startWaveAnimation = (e) => {
     e.target.classList.add("wave-animation");
   }
@@ -16,7 +21,6 @@ function InfoBar() {
   }
 
   const display = (
-    // #TODO add href for icons
     <div id="info-bar">
       <div id="info-bar-location">
         <img id="info-bar-pin" className="icon" src={assetPaths.pinIcon} alt="pin icon" />
@@ -27,8 +31,6 @@ function InfoBar() {
         <img id="info-bar-github" className="icon" src={assetPaths.githubIcon} alt="github icon" />
         <img id="info-bar-linkedin" className="icon" src={assetPaths.linkedInIcon} alt="linked in icon" />
         <img id="info-bar-mail" className="icon" src={assetPaths.mailIcon} alt="mail icon" />
-        <img id="info-bar-instagram" className="icon" src={assetPaths.instagramIcon} alt="instagram icon" />
-
       </div>
 
       <div id="info-bar-btns">
@@ -37,8 +39,7 @@ function InfoBar() {
           <WaveAnimation text="Resume" />
         </button>
 
-        {/* TODO adde href */}
-        <button className="playground glow-on-hover" onMouseEnter={startWaveAnimation} onMouseLeave={stopWaveAnimation}>
+        <button className="playground glow-on-hover" onClick={openMore} onMouseEnter={startWaveAnimation} onMouseLeave={stopWaveAnimation}>
           <img src={assetPaths.externalIcon} />
           <WaveAnimation text="More" />
         </button>
