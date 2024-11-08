@@ -1,9 +1,11 @@
+import assetPaths from '../../../assetPaths.js'
+
 function About() {
   return (
     <div id="about" className="apply-spacing txt-align-center scroll-offset">
       <h1 className="section-title">ABOUT</h1>
       <div className="contents">
-        <img src="src/assets/cat.jpeg" alt="a cute cat" className="picture" />
+        <img src={assetPaths.aboutImg} alt="a cute cat" className="picture" />
         <div className="text-contents">
           <p>
             Hello! I'm a second-year student studying computer science at the University of Toronto. 

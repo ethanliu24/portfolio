@@ -1,3 +1,5 @@
+import assetPaths from '../../../assetPaths.js'
+
 function ProjectCard({ name, description, tech, imgPath, githubLink, webLink, projectPagePath }) {
   return (
     <div id={"project-" + name.toLowerCase().split(" ").join("-")} className="project-card-container">
@@ -14,8 +16,8 @@ function ProjectCard({ name, description, tech, imgPath, githubLink, webLink, pr
       <div className="title-container">
         <a href={projectPagePath}><h2 className="project-name">{name}</h2></a>
         <div className="icon-container">
-          { githubLink ? <a href={githubLink} target="_blank" rel="noopener noreferrer"><img className="github-icon icon" src="src/assets/icons/github.svg" /></a> : <></>}
-          { webLink ? <a href={webLink} target="_blank" rel="noopener noreferrer"><img className="web-icon icon" src="src/assets/icons/web.svg" /></a> : <></>}
+          { githubLink ? <a href={githubLink} target="_blank" rel="noopener noreferrer"><img className="github-icon icon" src={assetPaths.githubIcon} /></a> : <></>}
+          { webLink ? <a href={webLink} target="_blank" rel="noopener noreferrer"><img className="web-icon icon" src={assetPaths.webIcon} /></a> : <></>}
           </div>
       </div>
     </div>

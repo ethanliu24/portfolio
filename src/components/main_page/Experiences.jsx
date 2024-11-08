@@ -1,4 +1,5 @@
 import Experience from "./Experience"
+import assetPaths from '../../../assetPaths.js'
 
 function Experiences() {
   return (
@@ -17,7 +18,7 @@ function Experiences() {
             I contributed to both front-end and back-end development, resolving data parsing issues, 
             enhancing front-end performance, and refactoring the codebase for scalability.
           "
-          logoPath={"src/assets/projects/courseography.png"}
+          logoPath={assetPaths.courseograhpy}
         />
       </div>
     </div>

@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import assetPaths from '../../../assetPaths.js'
 
 // TODO fill in href
 function NavBar() {
@@ -18,7 +19,7 @@ function NavBar() {
         <li><a href="">More</a></li>
       </ul>
       
-      <img id="menu" className="icon" src="src/assets/icons/menu.svg" onClick={() => {
+      <img id="menu" className="icon" src={assetPaths.menuIcon} onClick={() => {
           const navBar = document.querySelector("#nav-bar")
           open ? navBar.classList.add("opened") : navBar.classList.remove("opened");
           setOpen(o => !o)

@@ -2,7 +2,7 @@ const rootPath = "src/assets/"
 const iconPath = "icons/"
 const projectsPath = "projects/"
 
-const paths = {
+const assetPaths = {
   // general
   aboutImg: rootPath + "cat.jpeg",
   underDevelopment: rootPath + "under_development.gif",
@@ -15,7 +15,7 @@ const paths = {
   instagramIcon: rootPath + iconPath + "instagram.svg",
   linkedInIcon: rootPath + iconPath + "linkedin.svg",
   mailIcon: rootPath + iconPath + "mail.svg",
-  menuIcon: rootPath + iconPath + "root.svg",
+  menuIcon: rootPath + iconPath + "menu.svg",
   pinIcon: rootPath + iconPath + "pin.svg",
   webIcon: rootPath + iconPath + "web.svg",
 
@@ -36,4 +36,4 @@ const paths = {
   portfolioBanner: rootPath + projectsPath + "portfolio/banner.png",
 }
 
-export default paths
+export default assetPaths

@@ -1,4 +1,5 @@
 import ProjectCard from "./ProjectCard"
+import assetPaths from '../../../assetPaths.js'
 
 function ProjectSect() {
   return (
@@ -17,7 +18,7 @@ function ProjectSect() {
           stay tuned!
         " 
         tech={["JavaScript", "React", "GSAP", "Paper", "Vite"]}  
-        imgPath="src/assets/projects/portfolio/banner.png"
+        imgPath={assetPaths.portfolioBanner}
         githubLink="https://github.com/ethanliu24/portfolio"
         webLink="https://www.youtube.com/watch?v=KRtvCCDbLgQ" // TODO change path to the actual website
         projectPagePath="/under-development"
@@ -32,7 +33,7 @@ function ProjectSect() {
           for a smoother rental experience. There will be lots of learnings from this!
         " 
         tech={["React/Next", "Tailwind", "Rails", "OSMPythonTools", "pandas", "OpenAPI", "Docker", "Kamal"]}  
-        imgPath="src/assets/projects/comming_soon.png"
+        imgPath={assetPaths.commingSoon}
         projectPagePath="/under-development"
       />
 
@@ -44,7 +45,7 @@ function ProjectSect() {
           The system is interacted via terminal.
         " 
         tech={["Java"]}  
-        imgPath="src/assets/projects/jae-market/banner.png"
+        imgPath={assetPaths.JAEMarketBanner}
         projectPagePath="/under-development"
       />
 
@@ -55,7 +56,7 @@ function ProjectSect() {
           perform automated actions on instagram with a predetermined schedule.
         " 
         tech={["Python", "Requests", "Schedule"]}  
-        imgPath="src/assets/projects/dementia-bot/banner.png"
+        imgPath={assetPaths.dementiaBotBanner}
         githubLink="https://github.com/ethanliu24/Instagram-Bot"
         projectPagePath="/under-development"
       />
@@ -68,7 +69,7 @@ function ProjectSect() {
           and most likely RoR as the back-end framework.
         " 
         tech={["JavaScript", "Ruby", "React", "Tailwind", "Vite", "Rails"]}  
-        imgPath="src/assets/projects/comming_soon.png"
+        imgPath={assetPaths.commingSoon}
         projectPagePath="/under-development"
       /> */}
     </div>
