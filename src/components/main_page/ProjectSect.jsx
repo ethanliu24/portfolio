@@ -30,7 +30,7 @@ function ProjectSect() {
           Ongoing project! Currently in the design phase using OpenAPI to manage routes and data schemas.
           This project is a full stack website to address other rental services’ poor 
           design, slow response time, and lack of affordable listings in the rental market, aiming 
-          for a smoother rental experience. There will be lots of learnings from this!
+          for a smoother rental experience.
         " 
         tech={["React/Next", "Tailwind", "Rails", "OSMPythonTools", "pandas", "OpenAPI", "Docker", "Kamal"]}  
         imgPath={assetPaths.commingSoon}
