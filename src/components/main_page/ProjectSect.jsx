@@ -12,7 +12,9 @@ function ProjectSect() {
         name="Portfolio" 
         description="
           The page you are seeing right now! I made this using JavaScript and React, with pure CSS for styling. 
-          I also used GSAP and Paper for interactive animations.
+          I also used GSAP and Paper for interactive animations. In the future, I will be implementing
+          interactive visual and auditorial pages using ThreeJS and Web Audio API in the 'More' section, 
+          stay tuned!
         " 
         tech={["JavaScript", "React", "GSAP", "Paper", "Vite"]}  
         imgPath="src/assets/projects/portfolio/banner.png"
