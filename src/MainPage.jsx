@@ -79,9 +79,13 @@ function MainPage() {
       }, 0.2)
 
       // project info
-      scrollAnimation("#" + projects[i].id).from(`#${projects[i].id} .title-container a`, { opacity: 0 }, 1)
-      scrollAnimation("#" + projects[i].id).from(`#${projects[i].id} .title-container .github-icon`, { opacity: 0 }, 1.4)
-      scrollAnimation("#" + projects[i].id).from(`#${projects[i].id} .title-container .web-icon`, { opacity: 0 }, 1.8)
+      const projectTitle = document.getElementById(`#${projects[i].id} .title-container a`)
+      const githubIcon = document.querySelector(`#${projects[i].id} .title-container .github-icon`)
+      const webIcon = document.querySelector(`#${projects[i].id} .title-container .web-icon`)
+
+      if (projectTitle) scrollAnimation("#" + projects[i].id).from(projectTitle, { opacity: 0 }, 1)
+      if (githubIcon) scrollAnimation("#" + projects[i].id).from(githubIcon, { opacity: 0 }, 1.4)
+      if (webIcon) scrollAnimation("#" + projects[i].id).from(webIcon, { opacity: 0 }, 1.8)
     }
 
     // contact animation
