@@ -16,7 +16,7 @@ function Header() {
       <canvas id="star-canvas" resize="true"></canvas>
       <p id="header-subheading" className="text-shadow">Hey! My name is</p>
       <h1 id="header-title" className="text-shadow">Ethan Liu</h1>
-      <h6 id="header-subtitle" className="text-shadow">I'm a software developer from Toronto, Canada, I like to develop full stack web applications.</h6>
+      <h6 id="header-subtitle" className="text-shadow">I'm a software developer from Toronto, Canada. I like to develop full stack web applications.</h6>
       <div id="mouse-container">
         <div id="mouse-scroll"></div>
       </div>
