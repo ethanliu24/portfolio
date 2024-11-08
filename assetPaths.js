@@ -1,39 +1,105 @@
-const rootPath = "src/assets/"
-const iconPath = "icons/"
-const projectsPath = "projects/"
+// general
+import aboutImg from "/src/assets/cat.jpeg"
+import resume from "/src/assets/Master_Resume.pdf"
+import underDevelopment from "/src/assets/under_development.gif"
+
+// icons
+import downloadIcon from "/src/assets/icons/download.svg"
+import externalIcon from "/src/assets/icons/external.svg"
+import githubIcon from "/src/assets/icons/github.svg"
+import linkedInIcon from "/src/assets/icons/linkedin.svg"
+import mailIcon from "/src/assets/icons/mail.svg"
+import menuIcon from "/src/assets/icons/menu.svg"
+import pinIcon from "/src/assets/icons/pin.svg"
+import webIcon from "/src/assets/icons/web.svg"
+
+// projects
+import commingSoon from "/src/assets/projects/comming_soon.png"
+import courseography from "/src/assets/projects/courseography.png"
+
+// dementia-bot
+import dementiaBotBanner from "/src/assets/projects/dementia-bot/banner.png"
+
+// jae-market
+import JAEMarketBanner from "/src/assets/projects/jae-market/banner.png"
+
+// portfolio
+import portfolioBanner from "/src/assets/projects/portfolio/banner.png"
+
+// tech-stack
+import css from "/src/assets/dev_tools/css.svg"
+import figma from "/src/assets/dev_tools/figma.svg"
+import git from "/src/assets/dev_tools/git.svg"
+import gsap from "/src/assets/dev_tools/gsap.png"
+import happstack from "/src/assets/dev_tools/happstack.png"
+import haskell from "/src/assets/dev_tools/haskell.svg"
+import intellijdea from "/src/assets/dev_tools/intellijdea.svg"
+import java from "/src/assets/dev_tools/java.svg"
+import javascript from "/src/assets/dev_tools/javascript.svg"
+import jest from "/src/assets/dev_tools/jest.svg"
+import postman from "/src/assets/dev_tools/postman.svg"
+import pycharm from "/src/assets/dev_tools/pycharm.svg"
+import python from "/src/assets/dev_tools/python.svg"
+import reactTestingLibrary from "/src/assets/dev_tools/react_testing_library.svg"
+import react from "/src/assets/dev_tools/react.svg"
+import ruby from "/src/assets/dev_tools/ruby.svg"
+import springboot from "/src/assets/dev_tools/springboot.svg"
+import sqlite from "/src/assets/dev_tools/sqlite.svg"
+import vite from "/src/assets/dev_tools/vite.svg"
+import vsCode from "/src/assets/dev_tools/vscode.svg"
+import webpack from "/src/assets/dev_tools/webpack.svg"
 
 const assetPaths = {
-  // general
-  aboutImg: rootPath + "cat.jpeg",
-  underDevelopment: rootPath + "under_development.gif",
-  resume: rootPath + "Master_Resume.pdf",
-  
-  // icons
-  downloadIcon: rootPath + iconPath + "download.svg",
-  externalIcon: rootPath + iconPath + "external.svg",
-  githubIcon: rootPath + iconPath + "github.svg",
-  instagramIcon: rootPath + iconPath + "instagram.svg",
-  linkedInIcon: rootPath + iconPath + "linkedin.svg",
-  mailIcon: rootPath + iconPath + "mail.svg",
-  menuIcon: rootPath + iconPath + "menu.svg",
-  pinIcon: rootPath + iconPath + "pin.svg",
-  webIcon: rootPath + iconPath + "web.svg",
+  // general 
+  aboutImg,
+  underDevelopment,
+  resume,
 
-  // dev tool path
-  devToolPath: rootPath + "dev_tools/",
+  // icons
+  downloadIcon,
+  externalIcon,
+  githubIcon,
+  linkedInIcon,
+  mailIcon,
+  menuIcon,
+  pinIcon,
+  webIcon,
 
   // projects
-  courseograhpy: rootPath + projectsPath + "courseography.png",
-  commingSoon: rootPath + projectsPath + "comming_soon.png",
+  commingSoon,
+  courseography,
 
   // dementia-bot
-  dementiaBotBanner: rootPath + projectsPath + "dementia-bot/banner.png",
+  dementiaBotBanner,
 
   // jae-market
-  JAEMarketBanner: rootPath + projectsPath + "jae-market/banner.png",
+  JAEMarketBanner,
 
   // portfolio
-  portfolioBanner: rootPath + projectsPath + "portfolio/banner.png",
-}
+  portfolioBanner,
 
-export default assetPaths
+  // tech stack
+  css,
+  figma,
+  git,
+  gsap,
+  happstack,
+  haskell,
+  intellijdea,
+  java,
+  javascript,
+  jest,
+  postman,
+  pycharm,
+  python,
+  reactTestingLibrary,
+  react,
+  ruby,
+  springboot,
+  sqlite,
+  vite,
+  vsCode,
+  webpack,
+};
+
+export default assetPaths;
