@@ -18,7 +18,7 @@ function Experiences() {
             I contributed to both front-end and back-end development, resolving data parsing issues, 
             enhancing front-end performance, and refactoring the codebase for scalability.
           "
-          logoPath={assetPaths.courseograhpy}
+          logoPath={assetPaths.courseography}
         />
       </div>
     </div>
