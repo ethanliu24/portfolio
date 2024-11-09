@@ -35,6 +35,9 @@ jobs:
 
       - name: Build Vite
         run: npm run build
+      
+      - name: Check dist directory
+        run: ls -al dist/
 
       - name: Upload assets
         uses: actions/upload-artifact@v3
