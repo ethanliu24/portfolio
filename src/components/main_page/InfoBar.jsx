@@ -9,7 +9,7 @@ function InfoBar() {
 
   const openMore = () => {
     // TODO change to the actual webpage
-    window.location.href = window.location.pathname + "under-development"
+    window.location.href = window.location.pathname + "#/under-development"
   }
 
   const startWaveAnimation = (e) => {

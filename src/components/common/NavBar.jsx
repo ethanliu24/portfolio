@@ -1,22 +1,43 @@
 import { useState } from 'react'
+import { useLocation, useNavigate } from 'react-router-dom';
 import assetPaths from '../../../assetPaths.js'
 
 function NavBar() {
   const [open, setOpen] = useState(true)
+  
+  const location = useLocation()
+  const navigate = useNavigate()
+
+  const goToSection = (sectionId) => {
+    // Check if we are on the home directory
+    console.log(location.pathname)
+    if (location.pathname !== "/#/" && location.pathname !== "/") {
+      console.log(location.pathname)
+      navigate("/")
+    }
+
+    // Scroll to the corresponding section
+    setTimeout(() => {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 100);
+  }
 
   return (
     <nav id="nav-bar">
       <ul id="home">
-        <li id="nav-bar-home"><a href="#/#header">Home</a></li>
+        <li id="nav-bar-home"><a onClick={() => goToSection("header")}>Home</a></li>
       </ul>
 
       <ul id="links">
-        <li><a href="#/#about">About</a></li>
-        <li><a href="#/#experiences">Experiences</a></li>
+        <li><a onClick={() => goToSection("about")}>About</a></li>
+        <li><a onClick={() => goToSection("experiences")}>Experiences</a></li>
         {/* TODO change projects to go to /projects route */}
-        <li><a href="#/#project-sect">Projects</a></li> 
-        <li><a href="#/#contact">Contacts</a></li>
-        <li><a href="">More</a></li>
+        <li><a onClick={() => goToSection("project-sect")}>Projects</a></li> 
+        <li><a onClick={() => goToSection("contact")}>Contacts</a></li>
+        <li><a href="#/under-development">More</a></li>
       </ul>
       
       <img id="menu" className="icon" src={assetPaths.menuIcon} onClick={() => {
