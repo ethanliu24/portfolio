@@ -28,8 +28,8 @@ function InfoBar() {
       </div>
 
       <div id="info-bar-socials" className="icon-container">
-        <img id="info-bar-github" className="icon" src={assetPaths.githubIcon} alt="github icon" />
-        <img id="info-bar-linkedin" className="icon" src={assetPaths.linkedInIcon} alt="linked in icon" />
+        <a href="https://github.com/ethanliu24"><img id="info-bar-github" className="icon" src={assetPaths.githubIcon} alt="github icon" /></a>
+        <a href="https://www.linkedin.com/in/ethanliu24/"><img id="info-bar-linkedin" className="icon" src={assetPaths.linkedInIcon} alt="linked in icon" /></a>
         <img id="info-bar-mail" className="icon" src={assetPaths.mailIcon} alt="mail icon" />
       </div>
 
