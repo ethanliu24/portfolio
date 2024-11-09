@@ -39,6 +39,7 @@ jobs:
       - name: Upload assets
         uses: actions/upload-artifact@v3
         with:
+          name: dist
           path: "dist/"
   
   deploy:
@@ -52,6 +53,13 @@ jobs:
       pages: write # to deploy to Pages
       id-token: write # to verify the development originates from an appropriate source
     steps:
+      - uses: actions/checkout@v4
+
+      - name: Download build artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: dist/
+          
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
