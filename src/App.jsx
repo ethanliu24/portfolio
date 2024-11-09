@@ -9,8 +9,8 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/projects" element={<UnderDevelopement />} />
-      <Route path="/under-development" element={<UnderDevelopement />}/>
+      <Route path="#/projects" element={<UnderDevelopement />} />
+      <Route path="#/under-development" element={<UnderDevelopement />}/>
     </Routes>
   )
 }
