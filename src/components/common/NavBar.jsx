@@ -11,11 +11,11 @@ function NavBar() {
       </ul>
 
       <ul id="links">
-        <li><a href="portfolio/#about">About</a></li>
-        <li><a href="portfolio/#experiences">Experiences</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experiences">Experiences</a></li>
         {/* TODO change projects to go to /projects route */}
-        <li><a href="portfolio/#project-sect">Projects</a></li> 
-        <li><a href="portfolio/#contact">Contacts</a></li>
+        <li><a href="#project-sect">Projects</a></li> 
+        <li><a href="#contact">Contacts</a></li>
         <li><a href="">More</a></li>
       </ul>
       
