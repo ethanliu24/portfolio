@@ -1,5 +1,5 @@
 import { useEffect } from "react"
-import { initStars } from "../../../animations/starAnimation.js"
+import { initStars } from "../../animations/starAnimation.js"
 
 function Header() {
   const radiusRange = [0.1, 0.5]
