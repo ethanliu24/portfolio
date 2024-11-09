@@ -2,11 +2,13 @@ import ProjectCard from "./ProjectCard"
 import assetPaths from '../../../assetPaths.js'
 
 function ProjectSect() {
+  const underDevelopementPath = "#/under-development"
+
   return (
     <div id="project-sect" className="apply-spacing txt-align-center scroll-offset">
     <div className="container">
       <h1 className="section-title">PROJECTS</h1>
-      <a className="view-more section-subtext" href="/projects">view more »</a>
+      <a className="view-more section-subtext" href="#/projects">view more »</a>
     </div>
     <div className="contents">
       <ProjectCard
@@ -21,7 +23,7 @@ function ProjectSect() {
         imgPath={assetPaths.portfolioBanner}
         githubLink="https://github.com/ethanliu24/portfolio"
         webLink="https://www.youtube.com/watch?v=KRtvCCDbLgQ" // TODO change path to the actual website
-        projectPagePath="/under-development"
+        projectPagePath={underDevelopementPath}
       />
 
       <ProjectCard
@@ -34,7 +36,7 @@ function ProjectSect() {
         " 
         tech={["React/Next", "Tailwind", "Rails", "OSMPythonTools", "pandas", "OpenAPI", "Docker", "Kamal"]}  
         imgPath={assetPaths.commingSoon}
-        projectPagePath="/under-development"
+        projectPagePath={underDevelopementPath}
       />
 
       <ProjectCard
@@ -46,7 +48,7 @@ function ProjectSect() {
         " 
         tech={["Java"]}  
         imgPath={assetPaths.JAEMarketBanner}
-        projectPagePath="/under-development"
+        projectPagePath={underDevelopementPath}
       />
 
       <ProjectCard
@@ -58,7 +60,7 @@ function ProjectSect() {
         tech={["Python", "Requests", "Schedule"]}  
         imgPath={assetPaths.dementiaBotBanner}
         githubLink="https://github.com/ethanliu24/Instagram-Bot"
-        projectPagePath="/under-development"
+        projectPagePath={underDevelopementPath}
       />
 
       {/* <ProjectCard
