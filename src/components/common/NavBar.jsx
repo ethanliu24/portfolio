@@ -14,8 +14,8 @@ function NavBar() {
         <li><a href="#/#about">About</a></li>
         <li><a href="#/#experiences">Experiences</a></li>
         {/* TODO change projects to go to /projects route */}
-        <li><a href="#project-sect">Projects</a></li> 
-        <li><a href="#contact">Contacts</a></li>
+        <li><a href="#/#project-sect">Projects</a></li> 
+        <li><a href="#/#contact">Contacts</a></li>
         <li><a href="">More</a></li>
       </ul>
       
