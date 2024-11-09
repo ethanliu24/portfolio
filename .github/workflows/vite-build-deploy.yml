@@ -58,7 +58,7 @@ jobs:
       - name: Download build artifacts
         uses: actions/download-artifact@v3
         with:
-          name: dist/
+          name: dist
           
       - name: Deploy to GitHub Pages
         id: deployment
