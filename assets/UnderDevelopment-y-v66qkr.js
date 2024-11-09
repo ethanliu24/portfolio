@@ -1,0 +1,1 @@
+import{j as e}from"./index-jevd_Jrw.js";import{N as t}from"./NavBar-BGu9W226.js";function s(){return e.jsxs(e.Fragment,{children:[e.jsx(t,{}),e.jsx("div",{className:"under-development-page",children:"ethan so silly he did not make this page yet - its under development :)"})]})}export{s as default};
