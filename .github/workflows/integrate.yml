@@ -5,13 +5,13 @@ on:
     branches: [main]
   
 jobs: 
-  test_push: 
+  pushes: 
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
-          node-version: 12
+          node-version: 20
       - run: npm ci
       # can add test command here if needed, e.g. npm test
       - run: npm run build
