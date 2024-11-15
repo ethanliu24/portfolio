@@ -17,7 +17,7 @@ function About() {
           <p>
             I love challenging myself with creative problem-solving and exploring new 
             frameworks/libraries to use in my projects.
-            While I absolutely enjoy creating meaning full stack web applications, 
+            While I absolutely enjoy creating meaningful full stack web applications, 
             I am equally as excited to explore other fields in computer science, including 
             computer networks, AI, ML, UI/UX, computer graphics, cybersecurity and more!
           </p>
