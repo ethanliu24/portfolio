@@ -10,9 +10,7 @@ function NavBar() {
 
   const goToSection = (sectionId) => {
     // Check if we are on the home directory
-    console.log(location.pathname)
     if (location.pathname !== "/#/" && location.pathname !== "/") {
-      console.log(location.pathname)
       navigate("/")
     }
 
