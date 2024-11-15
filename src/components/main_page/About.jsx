@@ -10,8 +10,8 @@ function About() {
           <p>
             Hello! I'm a second-year student studying computer science at the University of Toronto. 
             My experience mainly roots in web development with a slight emphasis on the front-end,
-            using modern technologies such as React and other front-end libraries to create 
-            user friendly interfaces.
+            using modern technologies such as React and other front-end libraries such as Three and
+            GSAP to create user friendly interfaces.
           </p> 
 
           <p>
@@ -26,7 +26,7 @@ function About() {
             Beyond coding, I do fencing and I claim to be the biggest music nerd among my friends. 
             Although the cat in the image does not belong to me, he is my favourite meatball. 
             (I adore cats, they make funny faces and I put them in my presentations). 
-            You can learn more about me <a href="">here</a>.
+            You can learn more about me <a href="#/under-development">here</a>.
           </p>
         </div>
       </div>
