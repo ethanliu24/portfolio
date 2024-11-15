@@ -38,6 +38,7 @@ import intellijdea from "/src/assets/dev_tools/intellijdea.svg"
 import java from "/src/assets/dev_tools/java.svg"
 import javascript from "/src/assets/dev_tools/javascript.svg"
 import jest from "/src/assets/dev_tools/jest.svg"
+import mongodb from "/src/assets/dev_tools/mongodb.svg"
 import postman from "/src/assets/dev_tools/postman.svg"
 import pycharm from "/src/assets/dev_tools/pycharm.svg"
 import python from "/src/assets/dev_tools/python.svg"
@@ -91,6 +92,7 @@ const assetPaths = {
   java,
   javascript,
   jest,
+  mongodb,
   postman,
   pycharm,
   python,

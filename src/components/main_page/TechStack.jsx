@@ -22,6 +22,7 @@ function TechStack() {
         <Tool name="SpringBoot" description="java" path={assetPaths.springboot}/>
         <Tool name="Jest" description="testing" path={assetPaths.jest}/>
         <Tool name="React Testing Library" description="more testing" path={assetPaths.reactTestingLibrary}/>
+        <Tool name="MongoDB" description="ducking swing for 207 cant even connect to springboot" path={assetPaths.mongodb}/>
         <Tool name="SQLite" description="database" path={assetPaths.sqlite}/>
         <Tool name="Postman" description="delivery guy" path={assetPaths.postman}/>
         <Tool name="Git/GitHub" description="home" path={assetPaths.git}/>
