@@ -24,8 +24,9 @@ function TechStack() {
         <Tool name="React Testing Library" description="more testing" path={assetPaths.reactTestingLibrary}/>
         <Tool name="MongoDB" description="ducking swing for 207 cant even connect to springboot" path={assetPaths.mongodb}/>
         <Tool name="SQLite" description="database" path={assetPaths.sqlite}/>
-        <Tool name="Postman" description="delivery guy" path={assetPaths.postman}/>
         <Tool name="Git/GitHub" description="home" path={assetPaths.git}/>
+        <Tool name="Docker" description="so docky" path={assetPaths.docker}/>
+        <Tool name="Postman" description="delivery guy" path={assetPaths.postman}/>
         <Tool name="Figma" description="what's ligma?" path={assetPaths.figma}/>
         <Tool name="VS Code" description="chads use vim (not me)" path={assetPaths.vsCode}/>
         <Tool name="Pycharm" description="jet giving brain" path={assetPaths.pycharm}/>

@@ -28,6 +28,7 @@ import portfolioBanner from "/src/assets/projects/portfolio/banner.png"
 
 // tech-stack
 import css from "/src/assets/dev_tools/css.svg"
+import docker from "/src/assets/dev_tools/docker.svg"
 import figma from "/src/assets/dev_tools/figma.svg"
 import git from "/src/assets/dev_tools/git.svg"
 import gsap from "/src/assets/dev_tools/gsap.png"
@@ -82,6 +83,7 @@ const assetPaths = {
 
   // tech stack
   css,
+  docker,
   figma,
   git,
   gsap,
