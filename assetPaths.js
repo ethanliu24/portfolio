@@ -1,6 +1,6 @@
 // general
 import aboutImg from "/src/assets/cat.jpeg"
-import resume from "/src/assets/Master_Resume.pdf"
+import resume from "/src/assets/resume.pdf"
 import underDevelopment from "/src/assets/under_development.gif"
 
 // icons
@@ -53,7 +53,7 @@ import vsCode from "/src/assets/dev_tools/vscode.svg"
 import webpack from "/src/assets/dev_tools/webpack.svg"
 
 const assetPaths = {
-  // general 
+  // general
   aboutImg,
   underDevelopment,
   resume,
