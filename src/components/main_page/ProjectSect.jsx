@@ -39,14 +39,18 @@ function ProjectSect() {
       />
 
       <ProjectCard
-        name="JAE Market"
+        name="ConnectHub"
         description="
-          A backend system to manage a database, supporting CRUD actions for users.
-          The database is implemented using files to persist data, and manipulated with file I/O.
-          The system is interacted via terminal.
+          ConnectHub is a forum for meaningful discussions,
+          offering easy post management and personalized feeds based on your interests.
+          This is a project for the course CSC207 at the University of Toronto.
+          The website is not very 'complete', it's not a part of the project requirement and so
+          it's more of an experimentation with various technologies.
         "
-        tech={["Java"]}
-        imgPath={assetPaths.JAEMarketBanner}
+        tech={["React", "SpringBoot", "MongoDB", "Docker", "Webpack"]}
+        githubLink="https://github.com/csc207group76/connecthub"
+        webLink="https://connecthub-i5rz.onrender.com/"
+        imgPath={assetPaths.connecthubBanner}
         projectPagePath={ROUTES.UNDER_DEVELOPMENT_ROUTE}
       />
 
@@ -59,19 +63,31 @@ function ProjectSect() {
         tech={["Python", "Requests", "Schedule"]}
         imgPath={assetPaths.dementiaBotBanner}
         githubLink="https://github.com/ethanliu24/Instagram-Bot"
-        projectPagePath={underDevelopementPath}
+        projectPagePath={ROUTES.UNDER_DEVELOPMENT_ROUTE}
       />
 
       {/* <ProjectCard
         name="Music License Marketplace"
         description="
-          Ongoing project! The project aims to provide a plateform to simplify my beat leasing process and an efficient experience for customers.
-          It will support content creation, transactions, possibly AI integrations tools for musical analysis,
+        Ongoing project! The project aims to provide a plateform to simplify my beat leasing process and an efficient experience for customers.
+        It will support content creation, transactions, possibly AI integrations tools for musical analysis,
           and most likely RoR as the back-end framework.
+          "
+          tech={["JavaScript", "Ruby", "React", "Tailwind", "Vite", "Rails"]}
+          imgPath={assetPaths.commingSoon}
+          projectPagePath="/under-development"
+          /> */}
+
+      {/* <ProjectCard
+        name="JAE Market"
+        description="
+          A backend system to manage a database, supporting CRUD actions for users.
+          The database is implemented using files to persist data, and manipulated with file I/O.
+          The system is interacted via terminal.
         "
-        tech={["JavaScript", "Ruby", "React", "Tailwind", "Vite", "Rails"]}
-        imgPath={assetPaths.commingSoon}
-        projectPagePath="/under-development"
+        tech={["Java"]}
+        imgPath={assetPaths.JAEMarketBanner}
+        projectPagePath={ROUTES.UNDER_DEVELOPMENT_ROUTE}
       /> */}
     </div>
   </div>

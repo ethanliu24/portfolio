@@ -1,3 +1,5 @@
+// TODO divide those into seperate obj rather than an entire obj
+
 // general
 import aboutImg from "/src/assets/cat.jpeg"
 import resume from "/src/assets/resume.pdf"
@@ -16,6 +18,9 @@ import webIcon from "/src/assets/icons/web.svg"
 // projects
 import commingSoon from "/src/assets/projects/comming_soon.png"
 import courseography from "/src/assets/projects/courseography.png"
+
+// connecthub
+import connecthubBanner from "/src/assets/projects/connecthub/banner.png"
 
 // dementia-bot
 import dementiaBotBanner from "/src/assets/projects/dementia-bot/banner.png"
@@ -72,6 +77,9 @@ const assetPaths = {
   // projects
   commingSoon,
   courseography,
+
+  // connecthub
+  connecthubBanner,
 
   // dementia-bot
   dementiaBotBanner,
