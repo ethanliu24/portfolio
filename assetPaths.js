@@ -43,6 +43,7 @@ import mongodb from "/src/assets/dev_tools/mongodb.svg"
 import postman from "/src/assets/dev_tools/postman.svg"
 import pycharm from "/src/assets/dev_tools/pycharm.svg"
 import python from "/src/assets/dev_tools/python.svg"
+import rails from "/src/assets/dev_tools/rails.svg"
 import reactTestingLibrary from "/src/assets/dev_tools/react_testing_library.svg"
 import react from "/src/assets/dev_tools/react.svg"
 import ruby from "/src/assets/dev_tools/ruby.svg"
@@ -99,6 +100,7 @@ const assetPaths = {
   pycharm,
   python,
   reactTestingLibrary,
+  rails,
   react,
   ruby,
   springboot,
