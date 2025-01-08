@@ -7,7 +7,7 @@ function ProjectSect() {
     <div id="project-sect" className="apply-spacing txt-align-center scroll-offset">
     <div className="container">
       <h1 className="section-title">PROJECTS</h1>
-      <a className="view-more section-subtext" href="#/projects">view more »</a>
+      <a className="view-more section-subtext" href={ROUTES.PROJECTS_ROUTE}>view more »</a>
     </div>
     <div className="contents">
       <ProjectCard
