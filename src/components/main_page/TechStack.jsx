@@ -18,8 +18,9 @@ function TechStack() {
         <Tool name="Webpack" description="bdsm bundle" path={assetPaths.webpack}/>
         <Tool name="Vite" description="more bdsm bundle" path={assetPaths.vite}/>
         <Tool name="GSAP" description="need to explore more" path={assetPaths.gsap}/>
-        <Tool name="Happstack" description="cant even find the logo" path={assetPaths.happstack}/>
+        <Tool name="Rails" description="rails" path={assetPaths.rails}/>
         <Tool name="SpringBoot" description="java" path={assetPaths.springboot}/>
+        <Tool name="Happstack" description="cant even find the logo" path={assetPaths.happstack}/>
         <Tool name="Jest" description="testing" path={assetPaths.jest}/>
         <Tool name="React Testing Library" description="more testing" path={assetPaths.reactTestingLibrary}/>
         <Tool name="MongoDB" description="ducking swing for 207 cant even connect to springboot" path={assetPaths.mongodb}/>
