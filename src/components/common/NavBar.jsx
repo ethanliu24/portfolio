@@ -11,8 +11,8 @@ function NavBar() {
 
   const goToSection = (sectionId) => {
     // Check if we are on the home directory
-    if (location.pathname !== "/#/" && location.pathname !== "/") {
-      navigate("/")
+    if (location.pathname !== "/#/" && location.pathname !== ROUTES.HOME_ROUTE) {
+      navigate(ROUTES.HOME_ROUTE)
     }
 
     // Scroll to the corresponding section

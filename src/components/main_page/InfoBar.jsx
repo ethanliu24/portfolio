@@ -8,11 +8,6 @@ function InfoBar() {
     if (!newWindow) alert("Pop-up blocked! Please allow pop-ups to view the PDF.")
   }
 
-  const openMore = () => {
-    // TODO change to the actual webpage
-    window.location.href = window.location.pathname + "#/under-development"
-  }
-
   const startWaveAnimation = (e) => {
     e.target.classList.add("wave-animation");
   }
