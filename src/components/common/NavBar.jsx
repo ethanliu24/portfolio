@@ -1,10 +1,11 @@
 import { useState } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom';
 import assetPaths from '../../../assetPaths.js'
+import * as ROUTES from "../../routes.js"
 
 function NavBar() {
   const [open, setOpen] = useState(true)
-  
+
   const location = useLocation()
   const navigate = useNavigate()
 
@@ -33,16 +34,16 @@ function NavBar() {
         <li><a onClick={() => goToSection("about")}>About</a></li>
         <li><a onClick={() => goToSection("experiences")}>Experiences</a></li>
         {/* TODO change projects to go to /projects route */}
-        <li><a onClick={() => goToSection("project-sect")}>Projects</a></li> 
+        <li><a onClick={() => goToSection("project-sect")}>Projects</a></li>
         <li><a onClick={() => goToSection("contact")}>Contacts</a></li>
-        <li><a href="#/under-development">More</a></li>
+        <li><a href={ROUTES.PLAYGROUND_LINK}>More</a></li>
       </ul>
-      
+
       <img id="menu" className="icon" src={assetPaths.menuIcon} onClick={() => {
           const navBar = document.querySelector("#nav-bar")
           open ? navBar.classList.add("opened") : navBar.classList.remove("opened");
           setOpen(o => !o)
-        
+
           const links = document.querySelectorAll("#links li")
           links.forEach((elem) => {
             if (elem.style.display === "none" || elem.style.display === "") {

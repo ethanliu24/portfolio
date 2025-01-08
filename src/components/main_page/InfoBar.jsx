@@ -1,9 +1,10 @@
 import WaveAnimation from "../common/WaveAnimation"
 import assetPaths from '../../../assetPaths.js'
+import { PLAYGROUND_LINK } from "../../routes.js"
 
 function InfoBar() {
   const openResume = () => {
-    const newWindow = window.open(assetPaths.resume, "_blank") 
+    const newWindow = window.open(assetPaths.resume, "_blank")
     if (!newWindow) alert("Pop-up blocked! Please allow pop-ups to view the PDF.")
   }
 
@@ -39,10 +40,12 @@ function InfoBar() {
           <WaveAnimation text="Resume" />
         </button>
 
-        <button className="playground glow-on-hover" onClick={openMore} onMouseEnter={startWaveAnimation} onMouseLeave={stopWaveAnimation}>
-          <img src={assetPaths.externalIcon} />
-          <WaveAnimation text="More" />
-        </button>
+        <a href={PLAYGROUND_LINK}>
+          <button className="playground glow-on-hover" onMouseEnter={startWaveAnimation} onMouseLeave={stopWaveAnimation}>
+            <img src={assetPaths.externalIcon} />
+            <WaveAnimation text="More" />
+          </button>
+        </a>
       </div>
     </div>
   )
@@ -51,4 +54,4 @@ function InfoBar() {
 }
 
 
-export default InfoBar 
+export default InfoBar
