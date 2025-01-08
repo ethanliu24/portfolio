@@ -15,13 +15,13 @@ function ProjectSect() {
         description="
           The page you are seeing right now! I made this using JavaScript and React, with pure CSS for styling.
           I also used GSAP and Paper for interactive animations. In the future, I will be implementing
-          interactive visual and auditorial pages using ThreeJS and Web Audio API in the 'More' section,
+          interactive visual and auditorial pages using ThreeJS and Web Audio API in the 'More' section (the image is that page),
           stay tuned!
         "
         tech={["JavaScript", "React", "GSAP", "Paper", "Vite"]}
         imgPath={assetPaths.portfolioBanner}
         githubLink="https://github.com/ethanliu24/portfolio"
-        webLink="https://www.youtube.com/watch?v=KRtvCCDbLgQ" // TODO change path to the actual website
+        webLink={ROUTES.PLAYGROUND_LINK}
         projectPagePath={ROUTES.UNDER_DEVELOPMENT_ROUTE}
       />
 
