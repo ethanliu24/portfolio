@@ -1,1 +1,0 @@
-import{j as e}from"./index-CEthRdKg.js";import{N as s}from"./NavBar-DHWSeDmt.js";import{C as r,F as o}from"./Contact-BeJ13tlu.js";function m(){return e.jsxs("div",{className:"under-development",children:[e.jsx(s,{}),e.jsx("div",{className:"in-progress",children:"Under development"}),e.jsx(r,{}),e.jsx(o,{})]})}export{m as default};
