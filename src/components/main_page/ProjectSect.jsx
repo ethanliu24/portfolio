@@ -3,11 +3,14 @@ import assetPaths from '../../../assetPaths.js'
 import * as ROUTES from "../../routes.js"
 
 function ProjectSect() {
+  const hashedUnderDevRoute = "#" + ROUTES.UNDER_DEVELOPMENT_ROUTE
+  const hashedProjectsRoute = "#" + ROUTES.PROJECTS_ROUTE
+
   return (
     <div id="project-sect" className="apply-spacing txt-align-center scroll-offset">
     <div className="container">
       <h1 className="section-title">PROJECTS</h1>
-      <a className="view-more section-subtext" href={ROUTES.PROJECTS_ROUTE}>view more »</a>
+      <a className="view-more section-subtext" href={hashedProjectsRoute}>view more »</a>
     </div>
     <div className="contents">
       <ProjectCard
@@ -22,7 +25,7 @@ function ProjectSect() {
         imgPath={assetPaths.portfolioBanner}
         githubLink="https://github.com/ethanliu24/portfolio"
         webLink={ROUTES.PLAYGROUND_LINK}
-        projectPagePath={ROUTES.UNDER_DEVELOPMENT_ROUTE}
+        projectPagePath={hashedUnderDevRoute}
       />
 
       <ProjectCard
@@ -35,7 +38,7 @@ function ProjectSect() {
         "
         tech={["React/Next", "Tailwind", "Rails", "OSMPythonTools", "pandas", "OpenAPI", "Docker", "Kamal"]}
         imgPath={assetPaths.commingSoon}
-        projectPagePath={ROUTES.UNDER_DEVELOPMENT_ROUTE}
+        projectPagePath={hashedUnderDevRoute}
       />
 
       <ProjectCard
@@ -51,7 +54,7 @@ function ProjectSect() {
         githubLink="https://github.com/csc207group76/connecthub"
         webLink="https://connecthub-i5rz.onrender.com/"
         imgPath={assetPaths.connecthubBanner}
-        projectPagePath={ROUTES.UNDER_DEVELOPMENT_ROUTE}
+        projectPagePath={hashedUnderDevRoute}
       />
 
       <ProjectCard
@@ -63,7 +66,7 @@ function ProjectSect() {
         tech={["Python", "Requests", "Schedule"]}
         imgPath={assetPaths.dementiaBotBanner}
         githubLink="https://github.com/ethanliu24/Instagram-Bot"
-        projectPagePath={ROUTES.UNDER_DEVELOPMENT_ROUTE}
+        projectPagePath={hashedUnderDevRoute}
       />
 
       {/* <ProjectCard
@@ -87,7 +90,7 @@ function ProjectSect() {
         "
         tech={["Java"]}
         imgPath={assetPaths.JAEMarketBanner}
-        projectPagePath={ROUTES.UNDER_DEVELOPMENT_ROUTE}
+        projectPagePath={hashedUnderDevRoute}
       /> */}
     </div>
   </div>
