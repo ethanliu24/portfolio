@@ -1,0 +1,1 @@
+import{j as e}from"./index-D4eq-Zd8.js";import{N as s}from"./NavBar-gQvA4OU-.js";import{C as r,F as o}from"./Contact-DBwHxTdz.js";function m(){return e.jsxs("div",{className:"under-development",children:[e.jsx(s,{}),e.jsx("div",{className:"in-progress",children:"Under development"}),e.jsx(r,{}),e.jsx(o,{})]})}export{m as default};
